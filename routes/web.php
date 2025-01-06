@@ -23,8 +23,8 @@ Route::get('user/{id?}', function ($id = null) {
 });
 
 Route::get('hello', function () {
-    if( View::exists('hello1') ) {
-        return view('hello', ['body' => 'Bien body']);
+    if( View::exists('hello') ) {
+        return view('hello', ['name' => '<strong>Nguyen Van A</strong>']);
     }
     return 'Khong co view Hello!';
 });
