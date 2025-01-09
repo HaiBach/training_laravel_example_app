@@ -24,7 +24,8 @@ Route::get('user/{id?}', function ($id = null) {
 
 Route::get('hello', function () {
     if( View::exists('hello') ) {
-        return view('hello', ['name' => '<strong>Nguyen Van A</strong>']);
+        // return view('hello', ['name' => '<strong>Nguyen Van A</strong>']);
+        return view('hello', ['name' => 'Nguyen Van A']);
     }
     return 'Khong co view Hello!';
 });

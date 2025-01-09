@@ -6,9 +6,15 @@
     <title>{{$siteTitle}}</title>
 </head>
 <body>
-<h3>{{$siteTitle}}</h2>
 <p>Xin chào mọi người</p>
-<p>@{!! $name !!}</p>
-    
+<p>{!! $name !!}</p>
+
+@if ($name == 'Nguyen Van A')
+    <p>Bạn tên là: {{$name}}</p>
+    @include('share.notify', ['alertMessage' => 'Thông báo của file notify.'])
+@else
+    <p><strong>Bạn có tên khác!</strong></p>
+@endif
+
 </body>
 </html>
