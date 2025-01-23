@@ -8,5 +8,6 @@
 @endsection
 
 @section('content')
+    <h3>Dòng title mới</h3>
     <p>This is the content section.</p>
 @endsection
