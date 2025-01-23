@@ -29,3 +29,7 @@ Route::get('hello', function () {
     }
     return 'Khong co view Hello!';
 });
+
+Route::get('home', function () {
+    return view('home');
+});
